@@ -1,0 +1,1 @@
+# magazine2020.github.io
