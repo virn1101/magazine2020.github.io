@@ -3,6 +3,13 @@
   
 <head>
   <meta name="viewport" content="width=1000">
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
 <style>
 
 body
@@ -39,12 +46,79 @@ text-align: center;
 width: 60%; 
 }
 
+#holder {
+  display: table;
+    width: 100%;
+   /* background: #ccc;*/
+}
+#holder > div {
+  display: table-cell;
+  float:left;
+   padding: 1em;
+}
+#holder > div:nth-child(2) {
+  width-left: 50%;
+/*background: #676;*/
+}
+
+h3{
+  color:white;
+}
+
+.container{
+  color: green;
+}
 
 
 </style>
 </head>
 <body>
 
+  <div style="overflow: hidden;" class="container">
+<div id="holder">
+<div>
+  <h3>IMPORTANT NOTICE:-</h3>
+</div>
+<div>
+  <!-- Trigger the modal with a button -->
+  <button style="background-color: red;"type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">CLICK HERE</button>
+</div>
+</div>
+ <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 style="text-align: center;"class="modal-title"><b>KIND ATTENTION</b></h4>
+        </div>
+        <div class="modal-body">   
+           <p style="color:black;font-size: 20px;">
+      <b><u>Articles Needed</u></b>
+      <br/>
+  
+We are expecting the whole members (Teachers,Students & Non teaching staffs) of Malabar College to participate in the college magazine programme by giving articles like (poems,drawings etc...).
+<br/>
+<br/>
+<b><u>Volunteers Needed</u></b>
+<br/>
+
+We need volunteers to manage the magazine duties like: 
+.)Photo/Videographers <br/>
+.)Photo/Video editors <br/>
+.)Text typing (Different Languages) <br/>
+.)Webpage Designers/UI_UX Designers/Graphics Designers <br/>
+</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button"    
+class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  </div>
+  
 <div class="box">
 <img style="margin-top:22%; margin-bottom:22%;" src="IMG/corona.gif" alt="mcet_college_union" width="100%" height="100%">
 
